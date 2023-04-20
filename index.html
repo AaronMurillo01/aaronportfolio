@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaron Murillo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("3tzZaoxtHKd3CHSVi");
+   })();
+</script>
+</head>
+
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/Aaronlogo.png" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hey</h1>
+        <h1 class="title red">I'm Aaron.</h1>
+        <p class="header__para">
+          I'm a <b class="red">Full Stack Web Developer</b> with a strong passion for building web applications
+          with great user
+          experiences.
+          <br>
+          Here's a bit more <b class="red click" onclick="toggleModal()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/aaron-murillo/" target="_blank" class="social__link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/AaronMurillo01" target="_blank" class="social__link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="./assets/David Bragg Resume.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Full Stack Web Developer</h4>
+        <p class="modal__para">
+          I'm a 23 year-old <b class="red">Full Stack Web Developer</b> with a strong track record of delivering intuitive and user-friendly web solutions</b>.
+          <br>
+          Proficient in the latest technologies and tools, adept at collaborating in remote teams, and passionate about staying current with industry trends to drive exceptional results for clients.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+            <span class="language__name">TypeScript</span>
+          </figure>
+          
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="">
+            <span class="language__name">React</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="assets/postgresql.svg"
+              alt="">
+            <span class="language__name">PostgreSQL</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="assets/docker.png"
+              alt="">
+            <span class="language__name">Docker</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="assets/node-js.png"
+              alt="">
+            <span class="language__name">Node.js</span>
+          </figure>
+
+          <figure class="modal__language">
+            <img class="modal__language--img" src="assets/firebase.png"
+              alt="">
+            <span class="language__name">Firebase</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="assets/mongodb.png"
+              alt="">
+            <span class="language__name">MongoDB</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="assets/next-logo.webp"
+              alt="">
+            <span class="language__name">Next.js</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="assets/Git-Icon-1788C.png"
+              alt="">
+            <span class="language__name">Git</span>
+          </figure>
+  
+  
+
+
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+   
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7">
+    <img src="./assets/semi circle.svg" class="shape shape--8">
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="red">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Airbnbclone.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Airbnb Clone
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, TypeScript, JavaScript, React, Next.js, Tailwind CSS, Google Cloud, MongoDB
+                </h4>
+                <p class="project__description--para">
+                  AirBnB clone, featuring captivating Tailwind design and animations, full responsiveness, and multiple authentication methods. The platform incorporates Cloudinary CDN for image uploads, react-hook-form for form handling, and react-toast for server error management. Enjoy dynamic calendars, smooth page loading, and a comprehensive booking system with guest and owner cancellation options. Experience seamless property management and transparent pricing calculations on our user-friendly platform.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://aaron-rent-ab.vercel.app/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://github.com/AaronMurillo01/aaron-airbnb" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Netflixclone.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Netflix Clone
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, TypeScript, JavaScript, React, Next.js, Tailwind CSS, Firebase, Stripe payments  
+                </h4>
+                <p class="project__description--para">
+                  Netflix clone, a fully responsive movie application built using Next.js, TypeScript, Tailwind CSS, and Firebase v9. The platform sources movie data from the TMDB API, ensuring dynamic content display and seamless user experience. The integrated React Player fetches and presents movie trailers from YouTube within an interactive Material UI modal. Enjoy secure login and sign-in functionality with the robust Firebase authentication system, guaranteeing a safe and immersive movie streaming experience.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://aaron-h9j8ixrzz-aaronmurillo01.vercel.app/login" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://github.com/AaronMurillo01/aaron-nf" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Screenshot 2023-04-20 160237.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Evo-Gym
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, TypeScript, JavaScript, React, Tailwind CSS, FormSubmit
+                </h4>
+                <p class="project__description--para">
+                  I demonstrate my expertise in building and deploying a complete Typescript fitness application called Evo-Gym. The frontend of the application showcases my proficiency in using cutting-edge technologies, including React, Typescript, Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, and React Anchor Link Smooth Scroll. To ensure a seamless user experience, I employed Cloudflare Pages for deployment.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://e3cc0823.aaron-evo-gym.pages.dev" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://github.com/AaronMurillo01/aaron-evo-gym-" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Dogpark.jpg" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  DogPark
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, React, Bootstrap, TypeScript, Express.js, PostgreSQL, Node.js, Restful API
+                </h4>
+                <p class="project__description--para">
+                  Introducing DogPark, the "Dogs best friend app" – a social media platform specifically designed for dog enthusiasts. The app allows users to share photos of their dogs, complete with captions, and interact through likes and comments. Additionally, the app features a dog park map for the city of Albuquerque, enabling users to explore local parks. Our team coordinated through GitHub and managed tasks with ClickUp. Our backend supports six entities (profile, post, park, comment, follow, likes) and connects seamlessly to the frontend using React.js and Redux. The website is containerized with Docker for efficient deployment, and the integration of a JSON file ensures an extensive database of Albuquerque parks for users to explore. Experience DogPark, the ultimate app for dog lovers and their furry friends.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/capstone-project-dogpark/dogpark" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/Aaronlogo.png" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/AaronMurillo01" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/aaron-murillo/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+          <a href="./assets/David Bragg Resume.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2023 Aaron Murillo</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
