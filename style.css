@@ -688,6 +688,34 @@ footer {
   opacity: 1;
 }
 
+/* Small laptops, tablets, large smart phones */
+@media (max-width: 1024px) {
+  .title {
+  font-size: 60px;
+  }
+  .header__para {
+  font-size: 18px;
+  }
+  .nav__link:first-child {
+  display: none;
+  }
+  .project__description--para {
+  display: none;
+  }
+  .project__description {
+  left: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  }
+  .project__description--sub-title {
+  margin-bottom: 8px;
+  }
+  .modal__half {
+  padding: 40px;
+  }
+  }
+
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
   .title {
