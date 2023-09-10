@@ -56,6 +56,7 @@
         </li>
       </ul>
     </nav>
+    
     <header class="header">
       <div class="header__content">
         <h1 class="title">Hey</h1>
@@ -80,6 +81,7 @@
         </div>
       </div>
     </header>
+
     <a href="#">
       <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
@@ -216,10 +218,7 @@
       </div>
     </div>
    
-    
-    <img src="./assets/squiggly.svg" class="shape shape--6">
-    <img src="./assets/circle.svg" class="shape shape--7">
-    <img src="./assets/semi circle.svg" class="shape shape--8">
+
   </section>
   <section id="projects">
     <div class="container">
@@ -231,6 +230,33 @@
 
           <li class="project">
             <div class="project__wrapper">
+              <img src="assets/AI.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Companion.ai
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, TypeScript, JavaScript, React.js, Next.js, Tailwind, Stripe, OpenAI
+                </h4>
+                <p class="project__description--para">
+                  Welcome to my Next.js web application, where I've employed Tailwind CSS for sleek styling and animations. Clerk handles user authentication with ease, offering various login methods. Form management is streamlined with react-hook-form, and error handling is user-friendly thanks to react-toastify. Dynamic media generation is achieved through OpenAI for images and conversations, while Replicate AI is used for creating engaging videos and music. The application supports both Stripe-based monthly subscriptions and a free tier. On the backend, I've implemented CRUD routes, direct database access, and efficient component relations. All this is neatly organized with reusable layouts and a well-structured folder system following Next.js 13 App Router best practices.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://ai-companion-ten-ashen.vercel.app/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://github.com/AaronMurillo01/ai-companion" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project">
+            <div class="project__wrapper">
               <img src="assets/QRMenu.png" class="project__img" alt="">
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
@@ -238,7 +264,7 @@
                   QR Code Menu
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS, TypeScript, JavaScript, React, Python, Django
+                  Html, CSS, TypeScript, JavaScript, React.js, Python, Django
                 </h4>
                 <p class="project__description--para">
                   QR code menu builder tailored for eateries like restaurants, cafes, and hotels. Amidst the COVID-19 era, this tool offers a contactless, easily updatable digital menu, reducing printing costs. Users can design menus with categories, images, and real-time price updates. The customization features include font and button color adjustments, all in real-time. Each table gets a unique QR code, streamlining the ordering process. Scanning the code reveals the menu, allowing patrons to select dishes, adjust quantities, review, and pay via credit card, all through a mobile-friendly interface.
@@ -292,7 +318,7 @@
                   Airbnb Clone
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS, TypeScript, JavaScript, React, Next.js, Tailwind CSS, Google Cloud, MongoDB
+                  Html, CSS, TypeScript, JavaScript, React.js, Next.js, Tailwind CSS, Google Cloud, MongoDB
                 </h4>
                 <p class="project__description--para">
                   AirBnB clone, featuring captivating Tailwind design and animations, full responsiveness, and multiple authentication methods. The platform incorporates Cloudinary CDN for image uploads, react-hook-form for form handling, and react-toast for server error management. Enjoy dynamic calendars, smooth page loading, and a comprehensive booking system with guest and owner cancellation options. Experience seamless property management and transparent pricing calculations on our user-friendly platform.
@@ -318,7 +344,7 @@
                   Netflix Clone
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS, TypeScript, JavaScript, React, Next.js, Tailwind CSS, Firebase, Stripe payments  
+                  Html, CSS, TypeScript, JavaScript, React.js, Next.js, Tailwind CSS, Firebase, Stripe payments  
                 </h4>
                 <p class="project__description--para">
                   Netflix clone, a fully responsive movie application built using Next.js, TypeScript, Tailwind CSS, and Firebase v9. The platform sources movie data from the TMDB API, ensuring dynamic content display and seamless user experience. The integrated React Player fetches and presents movie trailers from YouTube within an interactive Material UI modal. Enjoy secure login and sign-in functionality with the robust Firebase authentication system, guaranteeing a safe and immersive movie streaming experience.
