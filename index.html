@@ -11,13 +11,16 @@
   <!-- Fallback Font Awesome if the kit fails -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="index.js"></script>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
-   (function(){
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
       emailjs.init("3tzZaoxtHKd3CHSVi");
-   })();
+      console.log("EmailJS initialized successfully");
+    } catch (error) {
+      console.error("EmailJS initialization error:", error);
+    }
+  });
 </script>
 </head>
 
@@ -61,17 +64,20 @@
     </nav>
     
     <header class="header">
-      <div class="header__content">
+      <div class="header__content" data-component-name="<div />">
         <h1 class="title">Hey</h1>
-        <h1 class="title red">I'm Aaron</h1>
-        <p class="header__para">
+        <h1 class="title red" data-component-name="<h1 />">I'm Aaron</h1>
+        <p class="header__para" data-component-name="<p />">
           I'm a <b class="red">Full Stack Developer</b> with a strong passion for building web applications
           with great user
           experiences.
           <br>
           Here's a bit more <b class="red click" onclick="toggleModal()">about me</b>.
         </p>
-        <div class="social__list">
+        <p class="header__para" style="font-size: 1.5rem; font-weight: 600; margin-top: 16px;">
+          Check out my new professional portfolio at <a href="https://www.aaronmurillo.dev/" target="_blank" class="red">www.aaronmurillo.dev</a>
+        </p>
+        <div class="social__list" data-component-name="<div />">
           <a href="https://www.linkedin.com/in/aaron-murillo/" target="_blank" class="social__link click">
             <i class="fab fa-linkedin-in"></i>
           </a>
